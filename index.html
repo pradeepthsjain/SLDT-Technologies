@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>SLDT - Electrical Contractors</title>
+    <title>SLD Technologies</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/image/sldt.png" />
-    <link rel="icon" type="image/png" sizes="64x64" href="/image/sldt.png" />
     <link rel="icon" type="image/png" sizes="64x64" href="/image/sldt.png" />
     <link rel="icon" href="/images/logo.ico" />
     <link rel="manifest" href="/site.webmanifest" />
@@ -36,75 +35,160 @@
     <meta name="google-site-verification" content="jaV77vjYzuHp1iylIncMy57G-kp4aF6Lc3kATYrRWew" />
     <link rel="canonical" href="https://sldt-portfolio.vercel.app/" />
 
-    <link rel="stylesheet" href="css/uikit.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/uikit.js"></script>
-    <script src="js/uikit-icons.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #003366, #00509E);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background: #00509E;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        nav ul li {
+            margin: 5px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px;
+            display: block;
+            transition: background 0.3s ease;
+        }
+        nav ul li a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        section {
+            padding: 20px;
+            max-width: 90%;
+            margin: auto;
+            background: white;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        h2 {
+            border-bottom: 3px solid #00509E;
+            padding-bottom: 10px;
+            font-size: 22px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: linear-gradient(135deg, #003366, #00509E);
+            color: white;
+            margin-top: 20px;
+        }
+        .contact-info {
+            text-align: center;
+            font-size: 16px;
+            background: #e8f0fe;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info p {
+            margin: 8px 0;
+            font-weight: bold;
+        }
+        .contact-info a {
+            color: #00509E;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            header {
+                font-size: 20px;
+                padding: 15px;
+            }
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul li {
+                margin: 2px 0;
+            }
+            section {
+                max-width: 95%;
+                padding: 15px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            .contact-info {
+                font-size: 14px;
+                padding: 10px;
+            }
+            .contact-info p {
+                margin: 5px 0;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-visible@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-        <div class="uk-navbar-left">
-            <a href="" class="uk-navbar-item uk-logo uk-light">SLDT</a>
-        </div>
-        <div class="uk-navbar-right">
-            <ul class="uk-navbar-nav uk-light">
-                <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>About</a></li>
-                <li><a class="uk-button-text uk-text-capitalize" href="#projects" uk-scroll>Projects</a></li>
-                <li><a class="uk-button-text uk-text-capitalize" href="https://wa.me/9019276526" target="_blank">Contact</a></li>
+    <header>
+        <h1>SLD Technologies</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills and Expertise</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
-        </div>
-    </nav>
-    <!-- Navigation Bar Ends  -->
-
-    <!-- Home -->
-    <section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-        <h1 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">Welcome to SLDT - Sri Lakshmi Deviramma Technologies</h1>
-        <p class="uk-margin-xlarge-left uk-light">23+ years of excellence in electrical contracting</p>
-        <a href="#about" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About Us</a>
-        <div class="uk-margin-xlarge-left">
-            <a href="ELC.pdf" download class="uk-text-capitalize uk-button uk-button-primary">Download CV</a>
-        </div>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Shree Laxmi Deviramma Electricals (SLDE) has been a trusted name in the electrical contracting industry for over 23 years. Under the leadership of Dinesh KM, SLDE has successfully completed 10,000+ projects, delivering excellence in electrical solutions across various sectors.</p>
     </section>
-    <!-- Home Ends -->
 
-    <hr class="uk-margin-xlarge-top uk-margin-xlarge-left uk-margin-xlarge-right">
-
-    <!-- About Us -->
-    <section id="about" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-        <h3 class="uk-margin-xlarge-left uk-light">About Us</h3>
-        <p class="uk-margin-xlarge-left uk-margin-xlarge-right">SLDT (Sri Lakshmi Deviramma Technologies) has been a leading electrical contractor for over 23 years. With 10,000+ successful projects, we specialize in various electrical works, including:</p>
-        <ul class="uk-margin-xlarge-left uk-margin-xlarge-right">
-            <li>50+ Layout works</li>
-            <li>50-60+ Multi-Storey (MS) building works</li>
-            <li>500+ 20-65 HP power projects</li>
-            <li>200+ High Tension (HT) works</li>
-            <li>Numerous wiring, meter services, and general building electrical works</li>
+    <section id="education">
+        <h2>Educational Background</h2>
+        <ul>
+            <li>B.E. in Electrical and Electronics Engineering - SJB Institute of Technology</li>
+            <li>PU in PCMB - Sri Vani PU College</li>
+            <li>High School - The Great Eastern International Public School</li>
         </ul>
     </section>
-    <!-- About Us Ends -->
 
-    <hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
-
-    <!-- Projects Section -->
-    <section id="projects" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-        <h3 class="uk-margin-xlarge-left uk-light">Our Projects</h3>
-        <p class="uk-margin-xlarge-left">Some of our major completed projects:</p>
-        <div class="uk-margin-xlarge-left uk-margin-xlarge-right">
-            <div class="uk-margin uk-card uk-card-secondary uk-card-body">
-                <h4>Layout Electrical Works</h4>
-                <p>Completed over 50+ layout electrification projects ensuring seamless power distribution.</p>
-            </div>
-            <div class="uk-margin uk-card uk-card-secondary uk-card-body">
-                <h4>High Tension (HT) Works</h4>
-                <p>Executed 200+ HT power projects, catering to industries and commercial establishments.</p>
-            </div>
-            <div class="uk-margin uk-card uk-card-secondary uk-card-body">
-                <h4>Multi-Storey Building Electrical Works</h4>
-                <p>Installed electrical systems for 50-60+ MS buildings, ensuring compliance with safety standards.</p>
-            </div>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>📛 <strong>Name:</strong> AKHILESH D</p>
+            <p>📞 <strong>Phone:</strong> <a href="tel:6363511990">6363511990</a></p>
+            <p>📧 <strong>Email:</strong> <a href="mailto:sldtechnologies07@gmail.com">sldtechnologies07@gmail.com</a></p>
+            <p>🌐 <strong>Website:</strong> <a href="https://sldt.in" target="_blank">sldt.in</a></p>
         </div>
     </section>
-    <hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
+    
+    <footer>
+        <p>&copy; 2024 SLD Technologies. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
